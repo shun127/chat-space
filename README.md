@@ -18,7 +18,7 @@
 |------|----|-------|
 |text|text|
 |image|text|
-|users_id|references|null: false,foreign_key: true|
+|user_id|references|null: false,foreign_key: true|
 |group_id|references|null: false,foreign_key: true|
 
 ### Association
@@ -38,7 +38,7 @@
 ## users_groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|users_id|references|null: false,foreign_key: true|
+|user_id|references|null: false,foreign_key: true|
 |group_id|references|null: false,foreign_key: true|
 
 ### Association
