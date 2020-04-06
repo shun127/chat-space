@@ -1,0 +1,50 @@
+.header
+  .main-header
+    .header__name
+      test
+      .header__menber__name
+        Member：
+    .header__edit-btn
+      =link_to "Edit","#",class:"edit"
+  .mainchat__massages
+    .massages
+      .massage
+        .massage__name
+          shun
+          .massage__update-info
+            2020/04/04(Sat) 04:04
+        .massage__text
+          朝食食べました。
+
+      .massage
+        .massage__name
+          shun
+          .massage__update-info
+            2020/04/04(Sat) 04:05
+        .massage__text
+          昼食食べました
+
+      .massage
+        .massage__name
+          shun
+          .massage__update-info
+            2020/04/04(Sat) 04:06
+        .massage__text
+          夕食食べました。
+
+      .massage
+        .massage__name
+          shun
+          .massage__update-info
+            2020/04/04(Sat) 04:07
+        .massage__text
+          夜食も食べます。
+  .mainchat__massage--form
+    %form.new_massage
+      .input-box
+        %input{type: "text", class:"input-box__text",placeholder:"type a message"}
+        %label{class: "input-box__image"}
+          =icon('fas','image')
+          %input{type:"file", class:"input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
+
