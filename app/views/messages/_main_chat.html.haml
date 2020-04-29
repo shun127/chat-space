@@ -10,11 +10,10 @@
           = user.name
     .header__edit-btn
       =link_to "Edit","edit",class:"edit"
-  .mainchat__massages
-    .massages
-      .massage
-        = render @messages
-  .mainchat__massage--form
+  .mainchat__messages
+    .messages
+      = render @messages
+  .mainchat__message--form
     = form_for [@group, @message] do |f|
       .input-box
         = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
