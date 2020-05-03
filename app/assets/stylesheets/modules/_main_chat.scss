@@ -50,17 +50,22 @@
       .message{
         padding-bottom: 46px;
 
-        .upper-message__user-name{
-          color: #333333;
-          font-size: 16px;
-          margin-bottom: 12px;
+        .upper-message {
+          display: flex;
+
+          .upper-message__user-name{
+            color: #333333;
+            font-size: 16px;
+            margin-bottom: 12px;
+            padding: 0 10px 0 0;
+          }
+  
+          .upper-message__date{
+              color: #999999;
+              font-size: 12px;
+          }
         }
 
-        .upper-message__date{
-            color: #999999;
-            font-size: 12px;
-          }
-        
         .lower-message__content{
           color: $blueblack;
           font-size: 14px;
